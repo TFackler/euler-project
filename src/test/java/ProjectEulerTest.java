@@ -66,4 +66,26 @@ public class ProjectEulerTest {
     public void test_euler12() {
         assertThat(ProjectEuler.euler12(), is(76576500));
     }
+
+    @Test
+    public void test_euler13() {
+        assertThat(ProjectEuler.euler13(), is("5537376230"));
+    }
+
+    @Test
+    public void test_euler14() {
+        //assertThat(ProjectEuler.euler14(), is(837799));
+    }
+
+    @Test
+    public void test_euler15() {
+        final int GRID_SIZE = 20;
+        long[][] gridCache = new long[GRID_SIZE][GRID_SIZE];
+        assertThat(ProjectEuler.euler15(gridCache, GRID_SIZE, GRID_SIZE), is(137846528820L));
+    }
+
+    @Test
+    public void test_euler16() {
+        assertThat(ProjectEuler.euler16(), is(1366L));
+    }
 }
